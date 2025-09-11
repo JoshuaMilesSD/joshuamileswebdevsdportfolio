@@ -1,0 +1,158 @@
+.pomodoro-clock {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.pomodoro-clock h1 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.control-group {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.control-group h3 {
+  color: #007bff;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.control-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.control-buttons button {
+  background: #007bff;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.control-buttons button:hover {
+  background: #0056b3;
+  transform: scale(1.1);
+}
+
+.control-buttons span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  min-width: 40px;
+}
+
+.timer-display {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.timer-display h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+#time-left {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#time-left.warning {
+  color: #ff6b6b;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.timer-controls {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.control-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.control-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+}
+
+.control-btn:nth-child(2) {
+  background: #dc3545;
+}
+
+.control-btn:nth-child(2):hover {
+  box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+}
+
+@media (max-width: 600px) {
+  .pomodoro-clock {
+    padding: 20px;
+  }
+  
+  .controls {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .control-group {
+    padding: 15px;
+  }
+  
+  #time-left {
+    font-size: 3rem;
+  }
+  
+  .timer-controls {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .control-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+}
