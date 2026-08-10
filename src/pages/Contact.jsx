@@ -26,16 +26,16 @@ function Contact() {
     <div className="contact">
       <div className="container">
         <h1>Get In Touch</h1>
-        
+
         <div className="contact-content">
           <div className="contact-info">
             <h2>Let's Work Together</h2>
             <p>
-              I'm always interested in new opportunities and exciting projects. 
-              Whether you need a custom web application, WordPress development, 
-              or consultation on the best platform for your needs, I'd love to hear from you.
+              I'm always interested in new opportunities and exciting projects.
+              Whether you need a custom web or mobile application, a digital marketing
+              campaign, or consultation on the best approach for your goals, I'd love to hear from you.
             </p>
-            
+
             <div className="contact-methods">
               <div className="contact-method">
                 <h3>Email</h3>
@@ -47,11 +47,17 @@ function Contact() {
               </div>
               <div className="contact-method">
                 <h3>Project Types</h3>
-                <p>Web development, WordPress, consulting</p>
+                <p>Web & mobile development, digital marketing & AI content, consulting</p>
               </div>
             </div>
+
+            <div className="social-links">
+              <a href="https://github.com/JoshuaMilesSD" target="_blank" rel="noopener noreferrer" className="social-link">GitHub</a>
+              <a href="https://www.linkedin.com/in/joshuamileswebdevsandiego" target="_blank" rel="noopener noreferrer" className="social-link">LinkedIn</a>
+              <a href="https://www.fiverr.com/joshuamilessd" target="_blank" rel="noopener noreferrer" className="social-link">Fiverr</a>
+            </div>
           </div>
-          
+
           <div className="contact-form-container">
             <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-group">
@@ -65,7 +71,7 @@ function Contact() {
                   required
                 />
               </div>
-              
+
               <div className="form-group">
                 <label htmlFor="email">Email</label>
                 <input
@@ -77,7 +83,7 @@ function Contact() {
                   required
                 />
               </div>
-              
+
               <div className="form-group">
                 <label htmlFor="message">Message</label>
                 <textarea
@@ -89,7 +95,7 @@ function Contact() {
                   required
                 ></textarea>
               </div>
-              
+
               <button type="submit" className="btn btn-primary">Send Message</button>
             </form>
           </div>
