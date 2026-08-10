@@ -136,3 +136,26 @@
     padding: 20px;
   }
 }
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 123, 255, 0.2);
+  color: #007bff;
+  padding: 10px 22px;
+  border-radius: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: #007bff;
+  color: white;
+  transform: translateY(-2px);
+}
